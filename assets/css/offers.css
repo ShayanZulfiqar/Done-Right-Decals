@@ -6,6 +6,10 @@
         --swan-button-min-height: 53px
       }
     }
+    
+    body{
+        overflow-x: hidden;
+    }
 
     .swan-button {
       -webkit-appearance: none;
