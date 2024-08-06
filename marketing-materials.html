@@ -111,10 +111,12 @@
     href="../swan.prod.merch.vpsvc.com/v3/styles/toggle-switch.fbe8a52e4db0988b265b901cfe267dc9.min.css" />
   <link data-react-helmet="true" rel="stylesheet"
     href="../swan.prod.merch.vpsvc.com/v3/styles/visible.388bb400607befa65ff09c5a81d28b7f.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- <link data-react-helmet="true" rel="canonical" href="marketing-materials.html" /> -->
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/offers.css">
   <link rel="stylesheet" href="assets/css/marketing-material.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
   <script data-react-helmet="true" type="text/javascript">!function (e, t) { "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t((e = "undefined" != typeof globalThis ? globalThis : e || self).abReader = {}) }(this, (function (e) { "use strict"; function t(e) { var t = function (e, t) { if ("object" != typeof e || !e) return e; var n = e[Symbol.toPrimitive]; if (void 0 !== n) { var r = n.call(e, t || "default"); if ("object" != typeof r) return r; throw new TypeError("@@toPrimitive must return a primitive value.") } return ("string" === t ? String : Number)(e) }(e, "string"); return "symbol" == typeof t ? t : String(t) } function n(e, n) { for (var r = 0; r < n.length; r++) { var o = n[r]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, t(o.key), o) } } function r(e, t) { return function (e) { if (Array.isArray(e)) return e }(e) || function (e, t) { var n = null == e ? null : "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"]; if (null != n) { var r, o, i, a, c = [], s = !0, l = !1; try { if (i = (n = n.call(e)).next, 0 === t) { if (Object(n) !== n) return; s = !1 } else for (; !(s = (r = i.call(n)).done) && (c.push(r.value), c.length !== t); s = !0); } catch (e) { l = !0, o = e } finally { try { if (!s && null != n.return && (a = n.return(), Object(a) !== a)) return } finally { if (l) throw o } } return c } }(e, t) || i(e, t) || function () { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.") }() } function o(e) { return function (e) { if (Array.isArray(e)) return a(e) }(e) || function (e) { if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e) }(e) || i(e) || function () { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.") }() } function i(e, t) { if (e) { if ("string" == typeof e) return a(e, t); var n = Object.prototype.toString.call(e).slice(8, -1); return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? a(e, t) : void 0 } } function a(e, t) { (null == t || t > e.length) && (t = e.length); for (var n = 0, r = new Array(t); n < t; n++)r[n] = e[n]; return r } var c = {}; Object.defineProperty(c, "__esModule", { value: !0 }); var s = c.getRootCookieDomain = void 0; s = c.getRootCookieDomain = function (e) { if (!e || e.startsWith("localhost") || e.startsWith("127.0.0.1")) return e; var t = ["co.uk", "co.nz", "com.au"].some((function (t) { return e.endsWith(t) })) ? 3 : 2, n = e.startsWith("staging") ? "staging." : "", r = e.split("."); return ".".concat(n).concat(r.slice(r.length - t, r.length).join(".")) }; var l = function (e) { var t, n = function (e, t) { var n = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"]; if (!n) { if (Array.isArray(e) || (n = i(e)) || t && e && "number" == typeof e.length) { n && (e = n); var r = 0, o = function () { }; return { s: o, n: function () { return r >= e.length ? { done: !0 } : { done: !1, value: e[r++] } }, e: function (e) { throw e }, f: o } } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.") } var a, c = !0, s = !1; return { s: function () { n = n.call(e) }, n: function () { var e = n.next(); return c = e.done, e }, e: function (e) { s = !0, a = e }, f: function () { try { c || null == n.return || n.return() } finally { if (s) throw a } } } }(document.cookie ? document.cookie.split("; ") : []); try { for (n.s(); !(t = n.n()).done;) { var r = t.value.split("="); if (r[0] === e) return r.slice(1).join("=") } } catch (e) { n.e(e) } finally { n.f() } return null }; let u; const f = new Uint8Array(16); function d() { if (!u && (u = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto), !u)) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported"); return u(f) } const p = []; for (let e = 0; e < 256; ++e)p.push((e + 256).toString(16).slice(1)); var m = { randomUUID: "undefined" != typeof crypto && crypto.randomUUID && crypto.randomUUID.bind(crypto) }; function y(e, t, n) { if (m.randomUUID && !t && !e) return m.randomUUID(); const r = (e = e || {}).random || (e.rng || d)(); if (r[6] = 15 & r[6] | 64, r[8] = 63 & r[8] | 128, t) { n = n || 0; for (let e = 0; e < 16; ++e)t[n + e] = r[e]; return t } return function (e, t = 0) { return (p[e[t + 0]] + p[e[t + 1]] + p[e[t + 2]] + p[e[t + 3]] + "-" + p[e[t + 4]] + p[e[t + 5]] + "-" + p[e[t + 6]] + p[e[t + 7]] + "-" + p[e[t + 8]] + p[e[t + 9]] + "-" + p[e[t + 10]] + p[e[t + 11]] + p[e[t + 12]] + p[e[t + 13]] + p[e[t + 14]] + p[e[t + 15]]).toLowerCase() }(r) } var g = "testUserId", w = new (function () { function e() { !function (e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") }(this, e) } var t, i, a; return t = e, (i = [{ key: "ensureUserTestId", value: function () { var e = this.getUserIdFromCookie(g), t = this.getUserIdFromCookie("optimizelyEndUserId"), n = e || t; return n || (n = this.setNewUserIdCookie()), n } }, { key: "getUserIdFromCookie", value: function (e) { var t = l(e); if (t) return t } }, { key: "setNewUserIdCookie", value: function () { var e = { domain: "undefined" != typeof window && window && window.location ? s(window.location.hostname) : "", "max-age": 15552e3, path: "/" }, t = y(); return function (e, t, n) { var i = ["".concat(e, "=").concat(t)].concat(o(Object.entries(n || {}).map((function (e) { var t = r(e, 2), n = t[0], o = t[1]; return "".concat(n, "=").concat(o) })))); document.cookie = i.join("; ") }(g, t, e), t } }]) && n(t.prototype, i), a && n(t, a), Object.defineProperty(t, "prototype", { writable: !1 }), e }()), h = function () { return w.ensureUserTestId() }; const v = "expCtx", b = "exp-ab-impression"; const x = () => window.location.search?.includes("exp_param_ignore"), I = e => { let t = function (e) { var t = {}, n = e ? e.split("; ") : []; for (const e of n) { var r = e.split("="); t[r[0]] = decodeURIComponent(r.slice(1).join("=")) } return t }(document.cookie)[e]; return t || (t = localStorage.getItem(e) || ""), t }, k = (e, t) => { console.warn(`AB reader failed in ${e}`, t) }, S = () => { try { if (x()) return console.log("(exp_param_ignore) requests to bypass experimentation, will return empty list"), []; const e = I(v); if (e || window.experimentClickedAlreadyFired || j(), e) return A(e, "|") } catch (e) { k("getAllExperiments", e) } return [] }, U = () => { try { return !!I(v) } catch (e) { return k("isAvailable", e), !1 } }; const A = (e, t) => { const n = [], r = e.split("~"); if (null !== r && 2 === r.length) { r[1].split(t).forEach((t => { const r = t.split(":"); let o = !0; 2 != r.length && (console.warn("Experiment context is malformed: ", e), o = !1); const i = r[0].trim(); n.some((e => e.experimentKey === i)) && (console.warn(`Experiment context has more than one instance of experiment key ${i}`, e), o = !1), o && n.push({ experimentKey: i, variationKey: r[1].trim() }) })) } return n }, E = (e, t) => { const n = [], r = e.split("~"); if (null !== r && 2 === r.length && r[1].length > 0) { r[1].split(t).forEach((t => { const r = t.split("^"); let o = !0; 3 != r.length && (console.warn("Features context is malformed: ", e), o = !1); const i = r[0].trim(); n.some((e => e.featureName === i)) && (console.warn(`Feature context has more than one instance of feature name ${i}`, e), o = !1), o && n.push({ featureName: i, ruleName: r[1].trim(), enabled: r[2].trim() }) })) } return n }, j = () => { const e = { eventDetail: "context_not_available", experimentName: "cookieless_exp_context" }; function t(e) { window.tracking.track("Experiment Clicked", e) } window?.tracking?.track ? t(e) : window.addEventListener("trackingReady", (function () { t(e) })), window.experimentClickedAlreadyFired = !0 }; function C() { const e = { _ttl: (new Date).getTime() + 6e4, testUserId: h(), experiments: {} }; try { const e = JSON.parse(localStorage.getItem(b) || "{}"); if (e && e._ttl > new Date && e.testUserId === h()) return e } catch (e) { k("fireImpression", e) } return e } function N(e, t) { return C().experiments[e] === t } function F(e, t) { let n = C(); n.experiments[e] = t, localStorage.setItem(b, JSON.stringify(n)) } function _(e, t) { function n() { window.tracking.track(e, t) } window?.tracking?.track ? n() : window.addEventListener("trackingReady", (function () { n() })) } "undefined" != typeof window && setTimeout((() => { window.abReaderInitialized = !0, U() || (async () => { try { const e = await fetch(`https://context-init-prod.cf-exp.vpsvc.com/?requestUrl=${encodeURIComponent(window.location.origin)}&testUserId=${h()}`); (await e.json()).forEach((e => { if ("client" === e.destination && "Set-Cookie" === e.name && (document.cookie = e.value), "client" === e.destination && "Add-Script" === e.name) { const t = /localStorage\.setItem\(\s*"(?<key>\w+)"\s*,\s*"(?<value>[^\s]+)"\s*\)/g; let n = null, r = 5; do { n = t.exec(e.value)?.groups, n?.key && localStorage.setItem(n.key, n.value) } while (null != n && --r > 0) } })), window.dispatchEvent(new Event("variationsResolved")) } catch (e) { console.warn("Experiment conext initialization failed") } })() }), 200), e.checkFeature = e => { try { const t = (() => { try { if (x()) return console.log("(exp_param_ignore) requests to bypass experimentation, will return empty list"), []; const e = I("expFlagCtx"); if (e || window.experimentClickedAlreadyFired || j(), e) return E(e, "|") } catch (e) { k("getAllFeatures", e) } return [] })(); return t.find((t => t.featureName === e)) ?? null } catch (e) { return k("getVariation", e), null } }, e.fireFeatureImpression = function (e, t, n) { if (!e || !t || !n) return k("fireImpression", "Invalid input parameters for the fireFeatureImpression"), !1; try { if (N(e, n)) return !1; return _("Experiment Flag Viewed", { flagName: e, passes: "true" === n, ruleId: t }), F(e, n), !0 } catch (e) { return k("fireFeatureImpression", e), !1 } }, e.fireImpression = function (e, t, n) { if (!e || !t) return k("fireImpression", "Invalid input parameters for the fireImpression"), !1; let r = { experimentName: e, variationName: t, nonInteraction: 1, impressionEventVersion: 2 }; n && (n.pageName && n.pageSection && n.pageStage ? r = { ...r, pageName: n.pageName, pageSection: n.pageSection, pageStage: n.pageStage } : k("fireImpression", "Page parameters format is wrong")); try { return !N(e, t) && (_("Experiment Viewed", r), F(e, t), !0) } catch (e) { return k("fireImpression", e), !1 } }, e.getAllExperiments = S, e.getTestUserId = () => h(), e.getVariation = e => { try { const t = S().find((t => t.experimentKey === e)); return t ? t.variationKey : null } catch (e) { return k("getVariation", e), null } }, e.isAvailable = U, e.whenAvailable = e => { e(U()) } }));
     //# sourceMappingURL=ab-reader.js.map
   </script>
@@ -1414,7 +1416,7 @@
             </div>
           </div>
         </main>
-        <div id="bookendsFooter" data-footerkey="v10_vistaprint_en-us_footer_full">
+        <div id="bookendsFooter" data-footerkey="v9_vistaprint_en-us_footer_full">
           <div id="full_footer" data-reactroot="">
             <footer class="full-footer">
               <div>
@@ -1423,16 +1425,15 @@
                     <div class="swan-grid-container">
                       <div class="swan-row">
                         <div class="swan-col-12">
-                          <div class="site-footer-guarantee-logo swan-mb-7"></div>
+                          <div class="site-footer-guarantee-logo swan-mb-6"></div>
                         </div>
                       </div>
                       <div class="swan-row">
-                        <div class="site-footer-left-section swan-col-3">
+                        <div class="site-footer-left-section swan-col-4">
                           <div class="site-footer-guarantee-container">
-                            <div class="site-footer-guarantee-message swan-mb-7">
+                            <div class="site-footer-guarantee-message swan-mb-5">
                               <h3>You need it. We print it. You love it.</h3>
-                              <p>
-                                Done Right Decals is <a href="customer-promise.html">here to help</a> every step of the way.
+                              <p>VistaPrint is <a href="customer-promise.html">here to help</a> every step of the way.
                               </p>
                             </div>
                             <div class="site-footer-divider">
@@ -1445,41 +1446,40 @@
                           <div class="site-footer-navigation">
                             <div class="swan-grid-container">
                               <div class="swan-row">
-                                <div class="swan-col-3 swan-col-xs-12 swan-col-sm-12">
+                                <div class="swan-col-4 swan-col-xs-12 swan-col-sm-12">
                                   <div class="swan-vanilla-ignore swan-accordion">
                                     <div aria-disabled="false" class="swan-vanilla-ignore swan-collapsible">
                                       <div class="swan-collapsible-summary">
-                                        <h3 class="swan-heading swan-text-small swan-font-weight-bold"><button
+                                        <h3 class="swan-heading swan-text-1 swan-font-weight-bold"><button
                                             aria-expanded="false"
                                             class="site-footer-navigation-header link-list-heading swan-collapsible-summary-button">Let
-                                            Us Help<img
-                                              style="float:right;mask-image:url(https://swan.prod.merch.vpsvc.com/v3/icons/caret_down.94a97f39eecd024c3c298258a724fbb3.svg);-webkit-mask-image:url(https://swan.prod.merch.vpsvc.com/v3/icons/caret_down.94a97f39eecd024c3c298258a724fbb3.svg)"
-                                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                            Us Help<img style="float:right"
+                                              src="https://swan.prod.merch.vpsvc.com/v2/icons/caret_down.94a97f39eecd024c3c298258a724fbb3.svg"
                                               alt=""
-                                              class="swan-icon swan-icon-mask swan-icon-size-20p swan-icon-skin-white swan-icon-type-caretDown" /></button>
+                                              class="swan-icon swan-icon-size-20p swan-icon-skin-white swan-icon-type-caretDown" /></button>
                                         </h3>
                                       </div>
                                       <div class="swan-collapsible-content">
                                         <ul class="site-footer-navigation-menu swan-link-list swan-list">
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="1"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="1"
                                               data-section="Footer" data-translation="myAccount"
                                               href="my-account/index.html">My Account</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="2"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="2"
                                               data-section="Footer" data-translation="ShippingFAQPage"
                                               href="shipping.html">Shipping</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="3"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="3"
                                               data-section="Footer" data-translation="contactUs"
                                               href="customer-care/help-center/index.html">Contact &amp; Support</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="4"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="4"
                                               data-section="Footer" data-translation="allproducts"
                                               href="all-products.html">All Products</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="5"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="5"
                                               data-section="Footer" data-translation="ideasAdvice"
                                               href="hub/index.html">Ideas &amp; Advice</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="6"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="6"
                                               data-section="Footer" data-translation="resellerProgram"
                                               href="reseller/index.html">Reseller Program</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="7"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="7"
                                               data-section="Footer" data-translation="accessibility"
                                               href="accessibility.html">Accessibility</a></li>
                                         </ul>
@@ -1487,38 +1487,37 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="swan-col-3 swan-col-xs-12 swan-col-sm-12">
+                                <div class="swan-col-4 swan-col-xs-12 swan-col-sm-12">
                                   <div class="swan-vanilla-ignore swan-accordion">
                                     <div aria-disabled="false" class="swan-vanilla-ignore swan-collapsible">
                                       <div class="swan-collapsible-summary">
-                                        <h3 class="swan-heading swan-text-small swan-font-weight-bold"><button
+                                        <h3 class="swan-heading swan-text-1 swan-font-weight-bold"><button
                                             aria-expanded="false"
                                             class="site-footer-navigation-header link-list-heading swan-collapsible-summary-button">Our
-                                            Company<img
-                                              style="float:right;mask-image:url(https://swan.prod.merch.vpsvc.com/v3/icons/caret_down.94a97f39eecd024c3c298258a724fbb3.svg);-webkit-mask-image:url(https://swan.prod.merch.vpsvc.com/v3/icons/caret_down.94a97f39eecd024c3c298258a724fbb3.svg)"
-                                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                            Company<img style="float:right"
+                                              src="https://swan.prod.merch.vpsvc.com/v2/icons/caret_down.94a97f39eecd024c3c298258a724fbb3.svg"
                                               alt=""
-                                              class="swan-icon swan-icon-mask swan-icon-size-20p swan-icon-skin-white swan-icon-type-caretDown" /></button>
+                                              class="swan-icon swan-icon-size-20p swan-icon-skin-white swan-icon-type-caretDown" /></button>
                                         </h3>
                                       </div>
                                       <div class="swan-collapsible-content">
                                         <ul class="site-footer-navigation-menu swan-link-list swan-list">
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="1"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="1"
                                               data-section="Footer" data-translation="AboutUs"
                                               href="about-us.html">About us</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="2"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="2"
                                               data-section="Footer" data-translation="careers"
                                               href="https://careers.vistaprint.com/">Careers</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="3"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="3"
                                               data-section="Footer" data-translation="forInvestors"
                                               href="http://ir.cimpress.com/">For Investors</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="4"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="4"
                                               data-section="Footer" data-translation="forMedia"
                                               href="https://news.vistaprint.com/">For Media</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="5"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="5"
                                               data-section="Footer" data-translation="sustainability"
                                               href="https://sustainability.vistaprint.com/">Sustainability</a></li>
-                                          <li class="site-footer-navigation-item swan-text-small"><a data-position="6"
+                                          <li class="site-footer-navigation-item swan-text-1"><a data-position="6"
                                               data-section="Footer" data-translation="DoNotSellmyinfo"
                                               href="data-sale-opt-out.html">Do Not Sell or Share My Info</a></li>
                                         </ul>
@@ -1535,42 +1534,41 @@
                                         data-translation="facebook" href="https://www.facebook.com/Vistaprint/">
                                         <div
                                           src="https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,w_auto/facebook_logo.svg"
-                                          class="swan-progressive-image-wrapper"><img alt="Facebook" role="img"
-                                            style="opacity:0.1" src="#" /></div>
+                                          class="swan-progressive-image-wrapper"><i class="fa-brands fa-facebook"
+                                            style="color: white;font-size: 20px;"></i></div>
                                       </a></li>
                                     <li class="site-footer-social-logo swan-mr-4"><a target="_blank"
                                         rel="noopener noreferrer external" data-position="2" data-section="Footer"
                                         data-translation="twitter" href="https://twitter.com/vistaprint">
                                         <div
                                           src="https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,w_auto/twitter_logo.svg"
-                                          class="swan-progressive-image-wrapper"><img alt="Twitter" role="img"
-                                            style="opacity:0.1" src="#" /></div>
+                                          class="swan-progressive-image-wrapper"><i class="fa-brands fa-x-twitter"
+                                            style="color: white;font-size: 20px;"></i></div>
                                       </a></li>
                                     <li class="site-footer-social-logo swan-mr-4"><a target="_blank"
                                         rel="noopener noreferrer external" data-position="3" data-section="Footer"
                                         data-translation="instagram" href="https://www.instagram.com/vistaprint/">
                                         <div
                                           src="https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,w_auto/instagram_logo.svg"
-                                          class="swan-progressive-image-wrapper"><img alt="Instagram" role="img"
-                                            style="opacity:0.1" src="#" /></div>
+                                          class="swan-progressive-image-wrapper"><i class="fa-brands fa-instagram"
+                                            style="color: white;font-size: 20px;"></i></div>
                                       </a></li>
                                     <li class="site-footer-social-logo swan-mr-4"><a target="_blank"
                                         rel="noopener noreferrer external" data-position="4" data-section="Footer"
                                         data-translation="pinterest" href="https://www.pinterest.com/vistaprint/">
                                         <div
                                           src="https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,w_auto/pinterest_logo.svg"
-                                          class="swan-progressive-image-wrapper"><img alt="Pinterest" role="img"
-                                            style="opacity:0.1" src="#" /></div>
+                                          class="swan-progressive-image-wrapper"><i class="fa-brands fa-pinterest"
+                                            style="color: white;font-size: 20px;"></i></div>
                                       </a></li>
                                   </ul>
                                   <div class="site-footer-locale-toggle-container"><button
                                       class="site-footer-locale-toggle" data-dialog-show="countrySelectorDialog"><img
                                         class="px-s" data-dialog-show="countrySelectorDialog" alt=""
                                         src="https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_46/country_flags/usflag.svg" /><img
-                                        style="mask-image:url(https://swan.prod.merch.vpsvc.com/v3/icons/caret_down.94a97f39eecd024c3c298258a724fbb3.svg);-webkit-mask-image:url(https://swan.prod.merch.vpsvc.com/v3/icons/caret_down.94a97f39eecd024c3c298258a724fbb3.svg)"
-                                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                        src="https://swan.prod.merch.vpsvc.com/v2/icons/caret_down.94a97f39eecd024c3c298258a724fbb3.svg"
                                         alt=""
-                                        class="swan-icon swan-icon-mask swan-icon-size-20p swan-icon-skin-white swan-icon-type-caretDown" /><span
+                                        class="swan-icon swan-icon-size-20p swan-icon-skin-white swan-icon-type-caretDown" /><span
                                         class="swan-visually-hidden">Current country United States, click to select
                                         country.</span></button></div>
                                 </div>
@@ -1590,57 +1588,33 @@
                               <div class="site-footer-additional-links-container">
                                 <ul role="list" style="flex-wrap:wrap;justify-content:flex-start"
                                   class="site-footer-additional-links swan-display-flex">
-                                  <li
-                                    class="site-footer-additional-link swan-text-xsmall swan-mb-2 swan-mr-4 swan-mt-0">
-                                    <a data-position="1" data-section="Footer" data-translation="contactUs"
+                                  <li class="site-footer-additional-link swan-text-m1 swan-mb-2 swan-mr-4 swan-mt-0"><a
+                                      data-position="1" data-section="Footer" data-translation="contactUs"
                                       href="tel:+1.866.207.4955">1.866.207.4955</a></li>
-                                  <li
-                                    class="site-footer-additional-link swan-text-xsmall swan-mb-2 swan-mr-4 swan-mt-0">
-                                    <a data-position="2" data-section="Footer" data-translation="home"
+                                  <li class="site-footer-additional-link swan-text-m1 swan-mb-2 swan-mr-4 swan-mt-0"><a
+                                      data-position="2" data-section="Footer" data-translation="home"
                                       href="index.html">Home</a></li>
-                                  <li
-                                    class="site-footer-additional-link swan-text-xsmall swan-mb-2 swan-mr-4 swan-mt-0">
-                                    <a data-position="3" data-section="Footer" data-translation="PrivacyAndCookiePolicy"
+                                  <li class="site-footer-additional-link swan-text-m1 swan-mb-2 swan-mr-4 swan-mt-0"><a
+                                      data-position="3" data-section="Footer" data-translation="PrivacyAndCookiePolicy"
                                       href="privacy-policy.html">Privacy and Cookie Policy</a></li>
-                                  <li
-                                    class="site-footer-additional-link swan-text-xsmall swan-mb-2 swan-mr-4 swan-mt-0">
-                                    <a data-position="4" data-section="Footer" data-translation="TermsAndConditions"
+                                  <li class="site-footer-additional-link swan-text-m1 swan-mb-2 swan-mr-4 swan-mt-0"><a
+                                      data-position="4" data-section="Footer" data-translation="TermsAndConditions"
                                       href="terms-of-use.html">Terms and Conditions</a></li>
-                                  <li
-                                    class="site-footer-additional-link swan-text-xsmall swan-mb-2 swan-mr-4 swan-mt-0">
-                                    <a data-position="5" data-section="Footer" data-translation="LegalNotice"
+                                  <li class="site-footer-additional-link swan-text-m1 swan-mb-2 swan-mr-4 swan-mt-0"><a
+                                      data-position="5" data-section="Footer" data-translation="LegalNotice"
                                       href="legal-notice.html">Legal Notice</a></li>
                                 </ul>
                               </div>
-                              <div class="site-footer-copyright-notice swan-text-xsmall">A CIMPRESS company<!-- -->
-                                <!-- -->© 2001-2024 
-                                Done Right Decals. All rights reserved.</div>
-                              <div class="site-footer-lower-message-section swan-text-xsmall">Unless stated otherwise,
+                              <div class="site-footer-copyright-notice swan-text-m1">A CIMPRESS company<!-- -->
+                                <!-- -->© 2001-2024 Done Right Decals. All rights reserved.
+                              </div>
+                              <div class="site-footer-lower-message-section swan-text-m1">Unless stated otherwise,
                                 prices are exclusive of delivery and product options.</div>
                             </div>
+
                             <div class="swan-col-4 swan-col-sm-12">
                               <div class="site-footer-payment-icons">
-                                <ul role="list" style="align-items:flex-start"
-                                  class="site-footer-payment-icons-container swan-display-flex">
-                                  <li class="site-footer-payment-icon">
-                                    <div
-                                      src="https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,w_auto/page_icons/em_mastercard_icon.svg"
-                                      class="swan-progressive-image-wrapper"><img alt="Mastercard" role="img"
-                                        style="opacity:0.1" src="#" /></div>
-                                  </li>
-                                  <li class="site-footer-payment-icon">
-                                    <div
-                                      src="https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,w_auto/page_icons/em_paypal_icon.svg"
-                                      class="swan-progressive-image-wrapper"><img alt="Paypal" role="img"
-                                        style="opacity:0.1" src="#" /></div>
-                                  </li>
-                                  <li class="site-footer-payment-icon">
-                                    <div
-                                      src="https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,w_auto/page_icons/em_visa_icon.svg"
-                                      class="swan-progressive-image-wrapper"><img alt="Visa" role="img"
-                                        style="opacity:0.1" src="#" /></div>
-                                  </li>
-                                </ul>
+                                
                               </div>
                             </div>
                           </div>
@@ -1652,29 +1626,29 @@
               </div>
             </footer>
             <dialog id="countrySelectorDialog" role="dialog" aria-modal="true"
-              class="country-selector-stylized-dialog swan-dialog swan-vanilla-ignore">
+              class="country-selector-stylized-dialog swan swan-dialog swan-vanilla-ignore">
               <div aria-label="countrySelector" class="swan-modal-dialog"><button
                   class="swan-modal-dialog-close-button"><span class="swan-visually-hidden">Close</span></button>
                 <div class="swan-modal-dialog-header">
                   <h2 class="swan-modal-dialog-title">
-                    <div class="swan-text-x3large">Choose Country</div>
+                    <div class="swan-text-5">Choose Country</div>
                   </h2>
                 </div>
                 <div class="swan-modal-dialog-body">
                   <ul role="list" aria-label="Choose Country" id="bookendsCountrySelectorContainer"
                     data-bookends-locale="en-US" class="country-selector-container swan-text-1">
-                    <li class="country-selector-item swan-mr-6 swan-mb-4 swan-text-small swan-font-weight-bold">
+                    <li class="country-selector-item swan-mr-6 swan-mb-4 swan-font-weight-bold">
                       <div class="country-selector-flag-image-container">
                         <div
                           src="https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_46/country_flags/usflag.svg"
                           class="swan-progressive-image-wrapper"><img alt="" role="img" style="opacity:0.1" src="#" />
                         </div>
                       </div>United States<ul role="list" class="swan-list swan-list-skin-minimal swan-display-flex">
-                        <li class="swan-pb-0"><span class="swan-text-small swan-font-weight-bold"><button
+                        <li class="swan-pb-0"><span class="swan-font-weight-bold"><button
                               class="swan-ml-2 country-selector-alternate-language swan-font-weight-bold"
                               data-position="1" data-section="Footer"
                               data-translation="ENUnitedStatesSite">EN</button></span></li>
-                        <li class="swan-pb-0"><span class="swan-text-small swan-font-weight-bold"><button
+                        <li class="swan-pb-0"><span class="swan-font-weight-bold"><button
                               class="swan-ml-2 country-selector-alternate-language swan-font-weight-bold"
                               data-position="2" data-section="Footer"
                               data-translation="ESUnitedStatesSite">ES</button></span></li>
@@ -1699,12 +1673,12 @@
                         </div>België
                       </button>
                       <ul role="list" class="swan-list swan-list-skin-minimal swan-display-flex">
-                        <li class="swan-pb-0"><span class="swan-text-small"><button
-                              class="swan-ml-2 country-selector-alternate-language " data-position="4"
-                              data-section="Footer" data-translation="NLBelgiëSite">NL</button></span></li>
-                        <li class="swan-pb-0"><span class="swan-text-small"><button
-                              class="swan-ml-2 country-selector-alternate-language " data-position="5"
-                              data-section="Footer" data-translation="FRBelgiëSite">FR</button></span></li>
+                        <li class="swan-pb-0"><span><button class="swan-ml-2 country-selector-alternate-language "
+                              data-position="4" data-section="Footer" data-translation="NLBelgiëSite">NL</button></span>
+                        </li>
+                        <li class="swan-pb-0"><span><button class="swan-ml-2 country-selector-alternate-language "
+                              data-position="5" data-section="Footer" data-translation="FRBelgiëSite">FR</button></span>
+                        </li>
                       </ul>
                     </li>
                     <li class="country-selector-item swan-mr-6 swan-mb-4"><button class="country-selector-country"
@@ -1726,12 +1700,12 @@
                         </div>Canada
                       </button>
                       <ul role="list" class="swan-list swan-list-skin-minimal swan-display-flex">
-                        <li class="swan-pb-0"><span class="swan-text-small"><button
-                              class="swan-ml-2 country-selector-alternate-language " data-position="6"
-                              data-section="Footer" data-translation="ENCanadaSite">EN</button></span></li>
-                        <li class="swan-pb-0"><span class="swan-text-small"><button
-                              class="swan-ml-2 country-selector-alternate-language " data-position="7"
-                              data-section="Footer" data-translation="FRCanadaSite">FR</button></span></li>
+                        <li class="swan-pb-0"><span><button class="swan-ml-2 country-selector-alternate-language "
+                              data-position="6" data-section="Footer" data-translation="ENCanadaSite">EN</button></span>
+                        </li>
+                        <li class="swan-pb-0"><span><button class="swan-ml-2 country-selector-alternate-language "
+                              data-position="7" data-section="Footer" data-translation="FRCanadaSite">FR</button></span>
+                        </li>
                       </ul>
                     </li>
                     <li class="country-selector-item swan-mr-6 swan-mb-4"><button class="country-selector-country"
@@ -1852,15 +1826,15 @@
                         </div>Schweiz
                       </button>
                       <ul role="list" class="swan-list swan-list-skin-minimal swan-display-flex">
-                        <li class="swan-pb-0"><span class="swan-text-small"><button
-                              class="swan-ml-2 country-selector-alternate-language " data-position="8"
-                              data-section="Footer" data-translation="DESchweizSite">DE</button></span></li>
-                        <li class="swan-pb-0"><span class="swan-text-small"><button
-                              class="swan-ml-2 country-selector-alternate-language " data-position="9"
-                              data-section="Footer" data-translation="FRSchweizSite">FR</button></span></li>
-                        <li class="swan-pb-0"><span class="swan-text-small"><button
-                              class="swan-ml-2 country-selector-alternate-language " data-position="10"
-                              data-section="Footer" data-translation="ITSchweizSite">IT</button></span></li>
+                        <li class="swan-pb-0"><span><button class="swan-ml-2 country-selector-alternate-language "
+                              data-position="8" data-section="Footer"
+                              data-translation="DESchweizSite">DE</button></span></li>
+                        <li class="swan-pb-0"><span><button class="swan-ml-2 country-selector-alternate-language "
+                              data-position="9" data-section="Footer"
+                              data-translation="FRSchweizSite">FR</button></span></li>
+                        <li class="swan-pb-0"><span><button class="swan-ml-2 country-selector-alternate-language "
+                              data-position="10" data-section="Footer"
+                              data-translation="ITSchweizSite">IT</button></span></li>
                       </ul>
                     </li>
                     <li class="country-selector-item swan-mr-6 swan-mb-4"><button class="country-selector-country"
@@ -1915,7 +1889,7 @@
             </dialog>
           </div>
           <script
-            src=../bookends.cdn.vpsvc.com/html/statics/v10/vistaprint/en-us/footer/full/dep-share/default-componentprops.js
+            src="../bookends.cdn.vpsvc.com/html/statics/v9/vistaprint/en-us/footer/full/dep-share/c3111820/default-componentprops.js"
             async> </script>
           <script> var full_footer_componentWrapperInterval = setInterval(() => { if (window.ComponentWrapper && window.full_footer_props && !!document.getElementById("full_footer")) { window.ComponentWrapper.show_full_footer(window.full_footer_props);; clearInterval(full_footer_componentWrapperInterval); } }, 100) </script>
         </div>
