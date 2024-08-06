@@ -3,6 +3,9 @@
         --swan-button-min-height: 53px
     }
 }
+body{
+    overflow-x: hidden;
+}
 
 .swan-button {
     -webkit-appearance: none;
@@ -7515,26 +7518,4 @@ a.swan-link-skin-cta .swan-icon {
 
 .swan-standard-tile.swan-standard-tile-skin-circular .swan-standard-tile-name {
   text-align: center;
-}
-
-
-
-
-
-
-:root {
-  --swan-toggle-switch-height: 20px;
-  --swan-toggle-switch-width: 36px;
-}
-
-:root {
-  --swan-toggle-switch: 1;
-}
-
-
-
-
-
-:root {
-  --swan-visible: 1;
 }
