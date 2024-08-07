@@ -171,61 +171,8 @@
     </script>
     
     
-    <script type="application/ld+json">
-                {
-                    "@context": "http://schema.org",
-                    "@type":"BreadcrumbList",
-                    "itemListElement": [ 
-                        {
-                            "position":1,
-                            "@type":"ListItem",
-                            "item": {
-                                "@id":"https://www.vistaprint.com/",
-                                "name":"Home"
-                            }
-                        },  
-                        {
-                            "position":2,
-                            "@type":"ListItem",
-                            "item": {
-                                "@id":"https://www.vistaprint.com/marketing-materials",
-                                "name":"Marketing Materials"
-                            }
-                        },  
-                        {
-                            "position":3,
-                            "@type":"ListItem",
-                            "item": {
-                                "@id":"https://www.vistaprint.com/marketing-materials/brochures",
-                                "name":"Brochures"
-                            }
-                        },  
-                        {
-                            "position":4,
-                            "@type":"ListItem",
-                            "item": {
-                                "@id":"https://www.vistaprint.com/marketing-materials/brochures/templates",
-                                "name":"Templates"
-                            }
-                        } 
-                    ]
-                }
-            </script>
+   
 
-
-    <script>
-        imageResources = [];
-
-        function windowPerfObserver(list, observer) {
-            list.getEntries().forEach((entry) => {
-                if (entry.name.includes('rendering')) {
-                    imageResources.push(entry);
-                }
-            });
-        }
-        windowObserver = new PerformanceObserver(windowPerfObserver);
-        windowObserver.observe({ type: "resource" });
-    </script>
 
 
 
