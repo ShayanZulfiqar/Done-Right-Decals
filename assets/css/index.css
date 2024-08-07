@@ -7111,7 +7111,7 @@ a.swan-link-skin-cta .swan-icon {
     display: table;
    }
    #img-holder {
-    background-image: url('https://static-assets.glossier.com/production/spree/images/attachments/000/003/755/portrait_normal/LashSlick.jpg?1556563261');
+    background-image: url('../images/cards/card-2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7165,4 +7165,35 @@ a.swan-link-skin-cta .swan-icon {
    .price-button:hover {
     background-color: rgba(0,0,0,0.8);
     cursor: pointer;
+   }
+   button.owl-prev {
+    position: absolute;
+    left: -20px;
+    top: 30%;
+   }
+   button.owl-next {
+    position: absolute;
+    right: -20px;
+    top: 30%;
+   }
+   button.owl-prev span{
+    border: 1px solid rgb(110, 110, 110);
+    color: rgb(101, 101, 101);
+    border-radius: 50%;
+    padding: 0px 23px 8px;
+       font-size:45px ;
+    }
+    button.owl-next span{
+        border: 1px solid rgb(110, 110, 110);
+        color: rgb(101, 101, 101);
+        border-radius: 50%;
+        padding: 0px 23px 8px;
+        font-size:45px ;
+   }
+   .home-demo{
+    margin: 0 40px;
+   }
+   .owl-theme .owl-nav [class*="owl-"]:hover{
+    background-color: transparent !important;
+    color: black !important;
    }
