@@ -1,5 +1,4 @@
 
-
   .search-bar-input.search-bar-input {
     min-height: 46px;
     height: 46px
@@ -14,10 +13,7 @@
     width: 100%
   }
 
-
-  @media only screen and (max-width: 767px) {
-   
-
+ 
   .mobile-search-veil {
     position: fixed;
     top: 0;
@@ -105,7 +101,8 @@
     }
   }
 
-
+  /*# sourceMappingURL=output.css.map */
+ 
   .cart-item-count-container {
     text-align: center
   }
@@ -121,7 +118,7 @@
     z-index: 1 !important
   }
 
-
+ 
 
   .swan-icon.swan-icon.swan-icon {
     object-fit: contain
@@ -197,7 +194,7 @@
     top: var(--swan-sem-space-6)
   }
 
-
+ 
 
   @keyframes flyout-slide-bottom {
     0% {
@@ -235,7 +232,7 @@
     }
   }
 
- 
+  
   .accounts-dropdown {
     position: relative;
     margin-top: var(--swan-sem-space-6);
@@ -412,6 +409,7 @@
 
  
 
+
   .my-account-flyout-intro {
     padding: var(--swan-sem-space-3) 0 0 var(--swan-sem-space-2);
     font-weight: bold
@@ -426,7 +424,7 @@
     padding-left: var(--swan-sem-space-4)
   }
 
-  
+ 
 
  
 
@@ -454,7 +452,8 @@
 
 
 
-
+ 
+  
 
   .country-selector-container {
     columns: 3;
@@ -628,6 +627,7 @@
   }
 
  
+  
 
   .virtual-section-tile .virtual-section-tile-container .virtual-section-tile-cta,
   .virtual-section-tile .virtual-section-tile-container .virtual-section-tile-description {
@@ -783,4 +783,3 @@
   .anchor-bar-negative-margin {
     margin-top: calc(var(--swan-sem-space-8)*-1)
   }
-}
