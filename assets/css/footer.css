@@ -176,7 +176,7 @@
         footer.full-footer .site-footer-right-section.site-footer-right-section .site-footer-right-section-social {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             padding-top: 24px;
             padding-bottom: 24px
         }
